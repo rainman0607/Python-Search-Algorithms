@@ -19,7 +19,7 @@ class Automaton:
             current_state = 0
 
             for char in word:
-                ch = ord(char) - 65
+                ch = ord(char) - 65  # the char A has a decimal value of 65
 
                 if self.goto[current_state][ch] == -1:
                     self.goto[current_state][ch] = states
